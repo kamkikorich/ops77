@@ -30,6 +30,21 @@ export default function LoginPage() {
                         <label htmlFor="password">Kata Laluan</label>
                         <Input id="password" name="password" type="password" required />
                     </div>
+
+                    {/* Remember Me Checkbox */}
+                    <div className="flex items-center gap-2">
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            name="rememberMe"
+                            defaultChecked
+                            className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                        />
+                        <label htmlFor="rememberMe" className="text-sm text-gray-600 dark:text-gray-400">
+                            Ingat saya (kekal log masuk)
+                        </label>
+                    </div>
+
                     {state?.error && (
                         <div className="text-sm font-medium text-red-500">
                             {state.error}
