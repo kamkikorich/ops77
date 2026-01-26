@@ -44,6 +44,13 @@ export default function ReportPage() {
     const fetchReport = async () => {
         setLoading(true);
 
+        const { data: { user } } = await supabase.auth.getUser();
+        if (!user) {
+            alert("Sila log masuk terlebih dahulu.");
+            setLoading(false);
+            return;
+        }
+
         let query = supabase
             .from("visits")
             .select(`

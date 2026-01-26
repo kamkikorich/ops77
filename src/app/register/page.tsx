@@ -19,6 +19,7 @@ function RegisterContent() {
         nama_kedai: "",
         no_lot: "",
         status_perkeso: "Belum Daftar",
+        kod_majikan: "",
         gps: "",
     });
 
@@ -46,6 +47,7 @@ function RegisterContent() {
             nama_kedai: formData.nama_kedai,
             no_lot: formData.no_lot,
             status_perkeso: formData.status_perkeso,
+            kod_majikan: formData.kod_majikan,
             gps: formData.gps || null,
         });
 
@@ -112,6 +114,21 @@ function RegisterContent() {
                         <option value="Ragu-ragu">Ragu-ragu (Siasatan Lanjut)</option>
                     </select>
                 </div>
+
+                {formData.status_perkeso === "Sudah Daftar" && (
+                    <div className="animate-in fade-in slide-in-from-top-2">
+                        <label className="mb-2 block text-sm font-medium">Kod Majikan</label>
+                        <Input
+                            required
+                            placeholder="Contoh: 9400000431Y"
+                            value={formData.kod_majikan || ""}
+                            onChange={(e) => setFormData({ ...formData, kod_majikan: e.target.value })}
+                        />
+                        <p className="mt-1 text-xs text-muted-foreground">
+                            Kod majikan perlu ada dalam rekod pendaftaran
+                        </p>
+                    </div>
+                )}
 
                 <div>
                     <label className="mb-2 block text-sm font-medium">Koordinat GPS</label>

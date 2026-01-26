@@ -14,5 +14,6 @@ export interface Premis {
     nama_kedai: string;
     no_lot: string;
     status_perkeso: string;
+    kod_majikan?: string;
     visits: Visit[];
 }

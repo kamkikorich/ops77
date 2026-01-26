@@ -5,9 +5,18 @@ export const PremiseSchema = z.object({
     nama_kedai: z.string().min(3, { message: "Nama kedai terlalu pendek (min 3 huruf)" }),
     no_lot: z.string().min(1, { message: "No Lot wajib diisi" }),
     status_perkeso: z.enum(["Belum Daftar", "Sudah Daftar", "Ragu-ragu"] as const),
+    kod_majikan: z.string().optional(),
     gps: z.string().regex(/^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/, {
         message: "Format GPS tidak sah (contoh: 3.123,101.456)",
     }).nullable().optional(),
+}).refine((data) => {
+    if (data.status_perkeso === "Sudah Daftar" && !data.kod_majikan) {
+        return false;
+    }
+    return true;
+}, {
+    message: "Kod Majikan wajib diisi jika status Sudah Daftar",
+    path: ["kod_majikan"],
 });
 
 export const VisitSchema = z.object({
