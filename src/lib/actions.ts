@@ -22,7 +22,7 @@ export async function checkPremise(uuid: string) {
 export async function updatePremiseStatus(uuid: string, status: string, kod_majikan?: string) {
     const supabase = await createClient();
 
-    const updateData: any = { status_perkeso: status };
+    const updateData: Record<string, string | null> = { status_perkeso: status };
     if (status === "Sudah Daftar" && kod_majikan) {
         updateData.kod_majikan = kod_majikan;
     } else if (status !== "Sudah Daftar") {

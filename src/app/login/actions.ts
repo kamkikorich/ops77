@@ -13,7 +13,7 @@ export async function login(_prevState: LoginState, formData: FormData) {
 
     const email = formData.get('email') as string
     const password = formData.get('password') as string
-    const _rememberMe = formData.get('rememberMe') === 'on'
+    // Note: rememberMe is handled by Supabase's persistent session cookies
 
     // Sign in with password
     const { error } = await supabase.auth.signInWithPassword({
