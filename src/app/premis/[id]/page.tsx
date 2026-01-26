@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import PremisDashboardClient from "./client-page";
 import { Visit } from "@/lib/types";
 

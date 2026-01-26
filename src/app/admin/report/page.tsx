@@ -96,8 +96,12 @@ export default function ReportPage() {
     // Auto-fetch on year change
     useEffect(() => {
         if (filterType === "year") {
-            fetchReport();
+            const fetch = async () => {
+                await fetchReport();
+            };
+            fetch();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedYear, filterType]);
 
     const formatDate = (dateStr: string) => {
@@ -256,7 +260,7 @@ export default function ReportPage() {
             {!loading && visits.length === 0 && (
                 <div className="text-center py-12 text-gray-500">
                     <p>Tiada data lawatan untuk dipaparkan.</p>
-                    <p className="text-sm">Sila pilih tarikh dan klik "Jana Laporan".</p>
+                    <p className="text-sm">Sila pilih tarikh dan klik &quot;Jana Laporan&quot;.</p>
                 </div>
             )}
 

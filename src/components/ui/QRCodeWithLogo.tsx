@@ -41,6 +41,7 @@ export function QRCodeWithLogo({
                     height: calculatedLogoSize,
                 }}
             >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                     src={logoSrc}
                     alt="OPS Kesan PERKESO Keningau"
