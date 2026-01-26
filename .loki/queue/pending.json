@@ -1,0 +1,36 @@
+[
+    {
+        "id": "task-001",
+        "type": "architect",
+        "priority": "critical",
+        "status": "pending",
+        "description": "Design Database Schema (Supabase/Postgres)",
+        "context": "Based on planningOPS.md sections 1 & 2. Need 'premis', 'lawatan', 'users' tables.",
+        "subtasks": [
+            "Create SQL migration for 'premis' table",
+            "Create SQL migration for 'lawatan' table",
+            "Create SQL migration for 'users' table"
+        ]
+    },
+    {
+        "id": "task-002",
+        "type": "frontend",
+        "priority": "high",
+        "status": "pending",
+        "description": "Implement 'Smart Routing' Logic",
+        "context": "Handle QR scan logic: if new -> register; if old -> dashboard.",
+        "subtasks": [
+            "Create middleware for UUID check",
+            "Build Pendaftaran Baru Page",
+            "Build Dashboard Premis Page"
+        ]
+    },
+    {
+        "id": "task-003",
+        "type": "backend",
+        "priority": "high",
+        "status": "pending",
+        "description": "Setup Authentication (Clerk/Supabase Auth)",
+        "context": "Secure admin routes and user profiles."
+    }
+]

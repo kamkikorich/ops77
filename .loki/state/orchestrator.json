@@ -1,0 +1,10 @@
+{
+    "phase": "discovery",
+    "project_name": "QR-Ops",
+    "started_at": "2026-01-23T09:00:00",
+    "metrics": {
+        "tasks_completed": 0,
+        "total_tokens": 0,
+        "cost": 0
+    }
+}
