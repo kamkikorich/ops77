@@ -18,9 +18,9 @@ export default function BatchPrintPage() {
     const shortenUUID = (uuid: string) => uuid.slice(0, 8).toUpperCase();
 
     return (
-        <div className="flex flex-col gap-6 p-8 bg-white min-h-screen text-black print:p-0">
+        <div className="flex flex-col bg-white min-h-screen text-black print:p-0 print:m-0">
             {/* Controls - Hidden when printing */}
-            <div className="flex gap-4 print:hidden">
+            <div className="flex gap-4 p-4 print:hidden">
                 <Button onClick={generateBatch}>Jana 6 Sticker</Button>
                 <Button variant="outline" onClick={() => window.print()}>
                     🖨️ Cetak A4
@@ -28,39 +28,43 @@ export default function BatchPrintPage() {
             </div>
 
             {/* Sticker Grid - 2 columns x 3 rows for A4 */}
-            <div className="grid grid-cols-2 gap-0 print:gap-0">
-                {stickers.map((uuid, index) => (
+            {/* A4 = 210mm x 297mm, with 5mm margins = 200mm x 287mm usable */}
+            {/* Each cell: 100mm x 95mm (approx) */}
+            <div
+                className="grid grid-cols-2 grid-rows-3 print:w-[200mm] print:h-[287mm] print:mx-auto"
+                style={{ gap: 0 }}
+            >
+                {stickers.map((uuid) => (
                     <div
                         key={uuid}
-                        className="flex flex-col items-center justify-center p-6 border border-dashed border-gray-300 print:border-gray-400"
+                        className="flex items-center justify-center border border-dashed border-gray-300 print:border-gray-400"
                         style={{
-                            // Each sticker approximately 95mm x 90mm for A4
-                            minHeight: "90mm",
+                            height: "95.67mm", // 287mm / 3 rows
                             pageBreakInside: "avoid",
                         }}
                     >
-                        {/* Sticker Content */}
-                        <div className="flex flex-col items-center gap-3 p-4 border-2 border-black bg-white">
+                        {/* Sticker Content - Compact */}
+                        <div className="flex flex-col items-center gap-1 p-2 border-2 border-black bg-white">
                             {/* Header */}
-                            <h2 className="text-lg font-extrabold text-center uppercase tracking-wide">
+                            <h2 className="text-sm font-extrabold text-center uppercase tracking-wide leading-tight">
                                 OPS Kesan PERKESO Keningau
                             </h2>
 
-                            {/* QR Code with Logo */}
-                            <QRCodeWithLogo value={uuid} size={140} />
+                            {/* QR Code with Logo - smaller for 6 per page */}
+                            <QRCodeWithLogo value={uuid} size={100} />
 
                             {/* Short ID */}
                             <div className="text-center">
-                                <p className="text-[10px] font-bold text-gray-500 uppercase">
+                                <p className="text-[8px] font-bold text-gray-500 uppercase">
                                     ID Premis
                                 </p>
-                                <p className="font-mono text-lg font-bold tracking-widest">
+                                <p className="font-mono text-sm font-bold tracking-widest">
                                     {shortenUUID(uuid)}
                                 </p>
                             </div>
 
                             {/* Footer */}
-                            <p className="text-[10px] font-bold text-gray-600 uppercase border-t border-gray-200 pt-2 w-full text-center">
+                            <p className="text-[8px] font-bold text-gray-600 uppercase border-t border-gray-200 pt-1 w-full text-center">
                                 PERTUBUHAN KESELAMATAN SOSIAL
                             </p>
                         </div>
@@ -75,7 +79,11 @@ export default function BatchPrintPage() {
                         margin: 5mm;
                         size: A4 portrait;
                     }
-                    body {
+                    html, body {
+                        width: 210mm;
+                        height: 297mm;
+                        margin: 0;
+                        padding: 0;
                         background: white;
                         -webkit-print-color-adjust: exact;
                         print-color-adjust: exact;
