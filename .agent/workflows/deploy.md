@@ -9,8 +9,9 @@ description: How to deploy QR OPS to Vercel
 1. Go to https://vercel.com/new
 2. Import `kamkikorich/qr_ops` from GitHub
 3. Configure environment variables:
-   - `NEXT_PUBLIC_SUPABASE_URL` = Supabase URL
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY` = Supabase anon key
+   - `GOOGLE_SHEETS_ID`
+   - `GOOGLE_SERVICE_ACCOUNT_EMAIL`
+   - `GOOGLE_PRIVATE_KEY`
 4. Click Deploy
 
 ## Subsequent Deploys

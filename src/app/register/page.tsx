@@ -4,15 +4,14 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { createClient } from "@/utils/supabase/client";
+// import { createClient } from "@/utils/supabase/client";
 import { PremiseSchema } from "@/lib/schemas";
-import { z } from "zod";
 
 function RegisterContent() {
     const searchParams = useSearchParams();
     const uuid = searchParams.get("uuid") || "";
     const router = useRouter();
-    const supabase = createClient();
+    // const supabase = createClient();
 
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
@@ -53,22 +52,23 @@ function RegisterContent() {
 
         if (!result.success) {
             // Check for checking validation errors
-            const errorMessage = result.error.issues.map((e: z.ZodIssue) => e.message).join("\n");
+            const errorMessage = result.error.issues.map((issue) => issue.message).join("\n");
             alert(`Ralat Validasi:\n${errorMessage}`);
             setIsLoading(false);
             return;
         }
 
-        // 2. Insert to DB (Data is guaranteed clean now)
-        const { error } = await supabase.from("premises").insert(result.data);
-
-        if (error) {
-            console.error("DB Error:", error);
-            alert(`Gagal menyimpan: ${error.message}`);
-            setIsLoading(false);
-        } else {
+        try {
+            // 2. Insert to Google Sheets via Server Action
+            const { addPremise } = await import('../actions'); // Dynamic import to stay client-side friendly-ish
+            await addPremise(result.data);
             alert("Pendaftaran Berjaya!");
             router.push(`/premis/${uuid}`);
+        } catch (error: unknown) {
+            console.error("DB Error:", error);
+            const message = error instanceof Error ? error.message : "Ralat tidak diketahui";
+            alert(`Gagal menyimpan: ${message}`);
+            setIsLoading(false);
         }
     };
 

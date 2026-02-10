@@ -4,15 +4,14 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { createClient } from "@/utils/supabase/client";
+// import { createClient } from "@/utils/supabase/client";
 import { VisitSchema } from "@/lib/schemas";
-import { z } from "zod";
 
 function VisitContent() {
     const searchParams = useSearchParams();
     const id = searchParams.get("id"); // Premise UUID
     const router = useRouter();
-    const supabase = createClient();
+    // const supabase = createClient();
 
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
@@ -24,39 +23,30 @@ function VisitContent() {
         e.preventDefault();
         setIsLoading(true);
 
-        // Get current user
-        const { data: { user } } = await supabase.auth.getUser();
-
-        if (!user) {
-            alert("Sila log masuk terlebih dahulu.");
-            router.push("/login"); // Make sure this page exists or update logic
-            return;
-        }
-
         // 1. Zod Validation
         const result = VisitSchema.safeParse({
             premis_id: id,
-            inspector_id: user.id,
+            inspector_id: 'admin', // Placeholder until auth is sorted
             status: formData.status,
             catatan: formData.catatan,
         });
 
         if (!result.success) {
-            alert(`Ralat Validasi:\n${result.error.issues.map((e: z.ZodIssue) => e.message).join("\n")}`);
+            alert(`Ralat Validasi:\n${result.error.issues.map((issue) => issue.message).join("\n")}`);
             setIsLoading(false);
             return;
         }
 
-        // 2. Insert to DB
-        const { error } = await supabase.from("visits").insert(result.data);
-
-        if (error) {
-            console.error(error);
-            alert(`Gagal simpan: ${error.message}`);
-            setIsLoading(false);
-        } else {
+        try {
+            const { addVisit } = await import('../actions');
+            await addVisit(result.data);
             alert("Lawatan direkodkan!");
             router.push(`/premis/${id}`);
+        } catch (error: unknown) {
+            console.error(error);
+            const message = error instanceof Error ? error.message : "Ralat tidak diketahui";
+            alert(`Gagal simpan: ${message}`);
+            setIsLoading(false);
         }
     };
 

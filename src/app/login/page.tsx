@@ -2,6 +2,7 @@
 
 import { useActionState } from 'react'
 import { login } from './actions'
+import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 
@@ -53,6 +54,13 @@ export default function LoginPage() {
                     <Button type="submit" size="lg" className="w-full" disabled={isPending}>
                         {isPending ? 'Sedang Log Masuk...' : 'Masuk'}
                     </Button>
+
+                    <p className="text-center text-sm text-gray-500">
+                        Belum ada akaun?{' '}
+                        <Link href="/signup" className="font-medium text-blue-600 hover:underline">
+                            Daftar Akaun
+                        </Link>
+                    </p>
                 </form>
             </div>
         </div>

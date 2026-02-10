@@ -13,8 +13,8 @@ QR OPS adalah sistem pengurusan lawatan pemeriksa PERKESO. Sistem ini menggunaka
 |----------|------------|
 | Framework | Next.js 16.1.4 |
 | Runtime | React 19.2.3 |
-| Database | Supabase (PostgreSQL) |
-| Auth | Supabase Auth |
+| Data store | Google Sheets (google-spreadsheet) |
+| Auth | Mock login (tiada auth backend) |
 | Styling | Tailwind CSS 4 |
 | Validation | Zod 4.3.6 |
 | Testing | Vitest 4.0.18 |
@@ -42,35 +42,33 @@ src/
 │   └── Scanner.tsx
 ├── lib/                    # Utilities & types
 │   ├── actions.ts          # Server actions
-│   ├── db.ts               # Database client
+│   ├── googleSheets.ts     # Google Sheets client (service account)
 │   ├── schemas.ts          # Zod validation
 │   ├── schemas.test.ts     # Schema tests
 │   ├── types.ts            # TypeScript types
 │   └── utils.ts            # Utility functions
-├── utils/supabase/         # Supabase clients
-│   ├── client.ts           # Browser client
-│   └── server.ts           # Server client
 └── middleware.ts           # Auth middleware
 ```
 
 ## Database Schema
 
-### Table: premises
+### Sheet: premises
 | Column | Type | Description |
 |--------|------|-------------|
-| uuid | UUID (PK) | Unique identifier |
+| uuid | UUID | Unique identifier |
 | nama_kedai | TEXT | Business name |
 | no_lot | TEXT | Lot number |
 | status_perkeso | TEXT | Registration status |
+| kod_majikan | TEXT | Employer code |
 | gps | TEXT | GPS coordinates |
 | created_at | TIMESTAMP | Creation date |
 
-### Table: visits
+### Sheet: visits
 | Column | Type | Description |
 |--------|------|-------------|
-| id | BIGINT (PK) | Auto-increment ID |
-| premis_id | UUID (FK) | References premises |
-| inspector_id | UUID (FK) | References auth.users |
+| id | TEXT/NUMBER | Identifier |
+| premis_id | UUID | References premises.uuid |
+| inspector_id | TEXT | Inspector identifier |
 | status | TEXT | "Patuh", "Kompoun", "Lawat Semula" |
 | catatan | TEXT | Notes |
 | created_at | TIMESTAMP | Visit date |
@@ -98,8 +96,7 @@ src/
 ## Environment Variables
 
 ```
-NEXT_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGc...
+CONTEXT7_API_KEY=ctx7sk_... (optional, untuk MCP Context7)
 ```
 
 ## Commands

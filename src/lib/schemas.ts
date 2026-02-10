@@ -21,7 +21,7 @@ export const PremiseSchema = z.object({
 
 export const VisitSchema = z.object({
     premis_id: z.string().uuid({ message: "ID Premis tidak sah" }),
-    inspector_id: z.string().uuid({ message: "ID Pemeriksa tidak sah" }),
+    inspector_id: z.string().min(1, { message: "ID Pemeriksa tidak sah" }),
     status: z.enum(["Patuh", "Kompoun", "Lawat Semula"] as const),
     catatan: z.string().optional(),
 });

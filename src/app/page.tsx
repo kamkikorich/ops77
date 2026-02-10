@@ -5,7 +5,7 @@ import { Scanner } from "@/components/ui/Scanner";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/Input";
-import { checkPremise } from "@/lib/actions";
+import { checkPremiseExists } from "@/app/actions";
 
 export default function Home() {
   const router = useRouter();
@@ -16,7 +16,7 @@ export default function Home() {
     setIsScanning(false);
 
     // Check if premise exists in DB
-    const exists = await checkPremise(result);
+    const exists = await checkPremiseExists(result);
 
     if (exists) {
       // If exists, go to dashboard

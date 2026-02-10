@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/Input";
 import { useRouter } from "next/navigation";
 import { Premis } from "@/lib/types";
 import { useState } from "react";
-import { updatePremiseStatus } from "@/lib/actions";
+import { updatePremiseStatus } from "@/app/actions";
 
 export default function PremisDashboardClient({ premis }: { premis: Premis }) {
     const router = useRouter();

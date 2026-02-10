@@ -16,10 +16,11 @@ npm install
 ```
 
 // turbo
-2. Create `.env.local` with Supabase credentials
+2. Create `.env.local` with Google Sheets credentials
 ```
-NEXT_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGc...
+GOOGLE_SHEETS_ID=...
+GOOGLE_SERVICE_ACCOUNT_EMAIL=...
+GOOGLE_PRIVATE_KEY=...
 ```
 
 // turbo

@@ -1,20 +1,15 @@
-import { createClient } from '@/utils/supabase/server'
+// import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 
 export default async function ScanPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params
-    const supabase = await createClient()
 
     // 1. Check if premise exists
-    // Using .maybeSingle() instead of .single() to avoid error if not found
-    const { data: premis } = await supabase
-        .from('premises')
-        .select('uuid')
-        .eq('uuid', id)
-        .maybeSingle()
+    const { checkPremiseExists } = await import('@/app/actions');
+    const exists = await checkPremiseExists(id);
 
     // 2. Redirect logic
-    if (premis) {
+    if (exists) {
         // Registered -> Go to Dashboard
         redirect(`/premis/${id}`)
     } else {

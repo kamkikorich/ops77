@@ -3,20 +3,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
-import { createClient } from "@/utils/supabase/client";
-
-interface Visit {
-    id: number;
-    premis_id: string;
-    status: string;
-    catatan: string;
-    created_at: string;
-    premises: {
-        nama_kedai: string;
-        no_lot: string;
-        status_perkeso: string;
-    };
-}
+// import { createClient } from "@/utils/supabase/client";
+import type { ReportRow } from "@/app/actions";
 
 interface Stats {
     total: number;
@@ -26,8 +14,8 @@ interface Stats {
 }
 
 export default function ReportPage() {
-    const supabase = createClient();
-    const [visits, setVisits] = useState<Visit[]>([]);
+    // const supabase = createClient();
+    const [visits, setVisits] = useState<ReportRow[]>([]);
     const [stats, setStats] = useState<Stats>({ total: 0, patuh: 0, kompoun: 0, lawatSemula: 0 });
     const [loading, setLoading] = useState(false);
     const [filterType, setFilterType] = useState<"range" | "year">("range");
@@ -44,57 +32,33 @@ export default function ReportPage() {
     const fetchReport = async () => {
         setLoading(true);
 
-        const { data: { user } } = await supabase.auth.getUser();
-        if (!user) {
-            alert("Sila log masuk terlebih dahulu.");
-            setLoading(false);
-            return;
-        }
+        try {
+            const { getReport } = await import('@/app/actions');
 
-        let query = supabase
-            .from("visits")
-            .select(`
-                id,
-                premis_id,
-                status,
-                catatan,
-                created_at,
-                premises (
-                    nama_kedai,
-                    no_lot,
-                    status_perkeso
-                )
-            `)
-            .order("created_at", { ascending: false });
+            // Convert strings to number for year if needed, but getReport takes string/undefined dates and number year
+            const data = await getReport(
+                filterType,
+                startDate || undefined,
+                endDate || undefined,
+                selectedYear
+            );
 
-        // Apply date filter
-        if (filterType === "range" && startDate && endDate) {
-            query = query
-                .gte("created_at", `${startDate}T00:00:00`)
-                .lte("created_at", `${endDate}T23:59:59`);
-        } else if (filterType === "year") {
-            query = query
-                .gte("created_at", `${selectedYear}-01-01T00:00:00`)
-                .lte("created_at", `${selectedYear}-12-31T23:59:59`);
-        }
+            if (data) {
+                setVisits(data);
 
-        const { data, error } = await query;
-
-        if (error) {
+                // Calculate stats
+                const statsData = {
+                    total: data.length,
+                    patuh: data.filter((v) => v.status === "Patuh").length,
+                    kompoun: data.filter((v) => v.status === "Kompoun").length,
+                    lawatSemula: data.filter((v) => v.status === "Lawat Semula").length,
+                };
+                setStats(statsData);
+            }
+        } catch (error: unknown) {
             console.error("Error fetching report:", error);
-            alert("Gagal mendapatkan laporan: " + error.message);
-        } else if (data) {
-            const visitData = data as unknown as Visit[];
-            setVisits(visitData);
-
-            // Calculate stats
-            const statsData = {
-                total: visitData.length,
-                patuh: visitData.filter((v) => v.status === "Patuh").length,
-                kompoun: visitData.filter((v) => v.status === "Kompoun").length,
-                lawatSemula: visitData.filter((v) => v.status === "Lawat Semula").length,
-            };
-            setStats(statsData);
+            const message = error instanceof Error ? error.message : "Ralat tidak diketahui";
+            alert("Gagal mendapatkan laporan: " + message);
         }
 
         setLoading(false);

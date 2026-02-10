@@ -45,7 +45,7 @@ describe('VisitSchema', () => {
     it('should validate valid visit', () => {
         const valid = {
             premis_id: '123e4567-e89b-12d3-a456-426614174000',
-            inspector_id: '123e4567-e89b-12d3-a456-426614174000',
+            inspector_id: 'admin',
             status: 'Patuh',
             catatan: 'Ok'
         };
@@ -55,7 +55,7 @@ describe('VisitSchema', () => {
     it('should reject invalid status', () => {
         const invalid = {
             premis_id: '123e4567-e89b-12d3-a456-426614174000',
-            inspector_id: '123e4567-e89b-12d3-a456-426614174000',
+            inspector_id: 'admin',
             status: 'Tak Patuh', // Invalid enum
         };
         expect(VisitSchema.safeParse(invalid).success).toBe(false);
