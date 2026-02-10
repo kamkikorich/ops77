@@ -4,6 +4,7 @@ import { useActionState } from 'react'
 import { registerUser, ActionState } from '../actions'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
+import { BackButton } from '@/components/ui/BackButton'
 import Link from 'next/link'
 
 const initialState: ActionState = {
@@ -16,6 +17,9 @@ export default function SignupPage() {
 
     return (
         <div className="flex min-h-[80vh] flex-col items-center justify-center p-4">
+            <div className="w-full max-w-sm">
+                <BackButton href="/login" label="Kembali ke Log Masuk" />
+            </div>
             <div className="w-full max-w-sm space-y-6">
                 <div className="space-y-2 text-center">
                     <h1 className="text-3xl font-bold">Daftar Akaun</h1>

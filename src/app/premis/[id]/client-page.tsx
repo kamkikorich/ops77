@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { BackButton } from "@/components/ui/BackButton";
 import { Input } from "@/components/ui/Input";
 import { useRouter } from "next/navigation";
 import { Premis } from "@/lib/types";
@@ -28,6 +29,7 @@ export default function PremisDashboardClient({ premis }: { premis: Premis }) {
 
     return (
         <div className="flex flex-col gap-6">
+            <BackButton />
             <div className="rounded-2xl bg-slate-900 p-6 text-white shadow-xl">
                 <h2 className="text-2xl font-bold">{premis.nama_kedai}</h2>
                 <p className="opacity-80">{premis.no_lot}</p>

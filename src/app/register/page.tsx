@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { BackButton } from "@/components/ui/BackButton";
 import { Input } from "@/components/ui/Input";
 import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -74,6 +75,7 @@ function RegisterContent() {
 
     return (
         <div className="flex flex-col gap-6">
+            <BackButton />
             <div className="flex flex-col gap-2">
                 <h2 className="text-xl font-bold">Pendaftaran Premis Baru</h2>
                 <div className="rounded-lg bg-blue-50 p-3 text-sm text-blue-700 dark:bg-blue-950 dark:text-blue-200">

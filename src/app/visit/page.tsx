@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { BackButton } from "@/components/ui/BackButton";
 import { Input } from "@/components/ui/Input";
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -52,7 +53,10 @@ function VisitContent() {
 
     return (
         <div className="flex flex-col gap-6">
-            <h2 className="text-xl font-bold">Rekod Lawatan</h2>
+            <div>
+                <BackButton />
+                <h2 className="text-xl font-bold">Rekod Lawatan</h2>
+            </div>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <div className="grid grid-cols-2 gap-3">

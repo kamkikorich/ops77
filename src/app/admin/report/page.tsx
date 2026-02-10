@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
+import { BackButton } from "@/components/ui/BackButton";
 import { Input } from "@/components/ui/Input";
 // import { createClient } from "@/utils/supabase/client";
 import type { ReportRow } from "@/app/actions";
@@ -96,7 +97,10 @@ export default function ReportPage() {
 
     return (
         <div className="flex flex-col gap-6 p-6 max-w-6xl mx-auto">
-            <h1 className="text-2xl font-bold">Laporan Lawatan</h1>
+            <div className="flex items-center gap-4">
+                <BackButton href="/" label="Utama" className="mb-0" />
+                <h1 className="text-2xl font-bold">Laporan Lawatan</h1>
+            </div>
 
             {/* Filter Section */}
             <div className="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border">
