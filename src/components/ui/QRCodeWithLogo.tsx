@@ -12,7 +12,7 @@ interface QRCodeWithLogoProps {
 export function QRCodeWithLogo({
     value,
     size = 200,
-    logoSrc = "/perkeso-logo.png",
+    logoSrc = "/perkeso-logo-new.jpg",
     logoSize,
 }: QRCodeWithLogoProps) {
     // Logo should be ~25% of QR size for optimal scanning
