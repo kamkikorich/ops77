@@ -147,6 +147,36 @@ export async function updatePremiseStatus(uuid: string, status: string, kod_maji
     return { success: true };
 }
 
+
+export async function getAllPremises() {
+    await ensureInit();
+    const sheet = doc.sheetsByTitle['premises'];
+    const rows = await sheet.getRows();
+    return (rows as SheetRow[]).map(row => ({
+        uuid: getRowString(row, 'uuid'),
+        nama_kedai: getRowString(row, 'nama_kedai'),
+        no_lot: getRowString(row, 'no_lot'),
+        status_perkeso: getRowString(row, 'status_perkeso'),
+        kod_majikan: getRowString(row, 'kod_majikan'),
+        gps: getRowString(row, 'gps'),
+        created_at: getRowString(row, 'created_at'),
+    }));
+}
+
+export async function getAllVisits() {
+    await ensureInit();
+    const sheet = doc.sheetsByTitle['visits'];
+    const rows = await sheet.getRows();
+    return (rows as SheetRow[]).map(row => ({
+        id: getRowString(row, 'id'),
+        premis_id: getRowString(row, 'premis_id'),
+        inspector_id: getRowString(row, 'inspector_id'),
+        status: getRowString(row, 'status'),
+        catatan: getRowString(row, 'catatan'),
+        created_at: getRowString(row, 'created_at'),
+    }));
+}
+
 export async function getVisits(premis_id: string) {
     await ensureInit();
     const sheet = doc.sheetsByTitle['visits'];

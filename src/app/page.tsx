@@ -91,6 +91,9 @@ export default function Home() {
             <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/admin/print-batch')}>
               🖨️ Cetak Sticker
             </Button>
+            <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/admin/analytics')}>
+              📊 Analisis
+            </Button>
           </div>
         </div>
       </div>
