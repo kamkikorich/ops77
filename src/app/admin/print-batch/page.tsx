@@ -51,7 +51,10 @@ export default function BatchPrintPage() {
                             </h2>
 
                             {/* QR Code with Logo - smaller for 6 per page */}
-                            <QRCodeWithLogo value={uuid} size={100} />
+                            <QRCodeWithLogo
+                                value={`${typeof window !== 'undefined' ? window.location.origin : ''}/scan/${uuid}`}
+                                size={100}
+                            />
 
                             {/* Short ID */}
                             <div className="text-center">
