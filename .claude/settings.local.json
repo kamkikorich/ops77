@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__browseros__new_page",
+      "mcp__browseros__take_snapshot",
+      "mcp__browseros__click",
+      "mcp__browseros__get_page_content",
+      "mcp__browseros__search_dom",
+      "mcp__browseros__navigate_page",
+      "mcp__browseros__evaluate_script",
+      "mcp__browseros__take_screenshot",
+      "mcp__browseros__save_screenshot",
+      "mcp__browseros__press_key",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "mcp__browseros__take_enhanced_snapshot",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(npx tsx:*)",
+      "mcp__browseros__fill",
+      "mcp__browseros__get_console_logs",
+      "Bash(gh api:*)",
+      "mcp__browseros__clear",
+      "mcp__browseros__type_at",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_type",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_press_key",
+      "mcp__plugin_playwright_playwright__browser_handle_dialog",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "Bash(npm ls:*)",
+      "mcp__plugin_playwright_playwright__browser_wait_for"
+    ]
+  }
+}

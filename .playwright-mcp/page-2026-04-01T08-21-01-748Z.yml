@@ -1,0 +1,127 @@
+- application [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - iframe [ref=e3]:
+    
+  - banner "Menu bar" [ref=e4]:
+    - generic [ref=e7]:
+      - link "Sheets home" [ref=e9] [cursor=pointer]:
+        - /url: https://docs.google.com/spreadsheets/u/0/?authuser=0&usp=sheets_web
+      - generic [ref=e16]:
+        - generic "perkeso_ops1_Rumah" [ref=e18]:
+          - generic [ref=e19]:
+            - generic: perkeso_ops1_Rumah
+            - textbox "Rename" [ref=e21]: perkeso_ops1_Rumah
+          - generic [ref=e22]:
+            - checkbox "Star" [ref=e24] [cursor=pointer]
+            - 'button "Document status: Saved to Drive." [ref=e28]':
+              - generic [ref=e33] [cursor=pointer]: Saved to Drive
+        - generic [ref=e36]:
+          - button "Last edit was 2 minutes ago" [ref=e38] [cursor=pointer]
+          - button "Show all comments" [ref=e42] [cursor=pointer]
+          - button "Join a call here or present this tab to the call" [ref=e46] [cursor=pointer]
+          - button "Share. Shared with 1 person." [ref=e52] [cursor=pointer]
+          - generic [ref=e57]:
+            - generic:
+              - button "Ask Gemini" [ref=e60] [cursor=pointer]:
+                - img [ref=e63]
+              - tooltip [ref=e66]: Ask Gemini
+          - 'button "Google Account: Indie Sabah Record (kamkikorich@gmail.com)" [ref=e69] [cursor=pointer]':
+            - img [ref=e71]
+            - img [ref=e76]
+    - generic [ref=e77]:
+      - menubar [ref=e79]:
+        - menuitem "File" [ref=e80] [cursor=pointer]
+        - menuitem "Edit" [ref=e81] [cursor=pointer]
+        - menuitem "View" [ref=e82] [cursor=pointer]
+        - menuitem "Insert" [ref=e83] [cursor=pointer]
+        - menuitem "Format" [ref=e84] [cursor=pointer]
+        - menuitem "Data" [ref=e85] [cursor=pointer]
+        - menuitem "Tools" [ref=e86] [cursor=pointer]
+        - menuitem "Gemini" [ref=e87] [cursor=pointer]
+        - menuitem "Extensions" [ref=e88] [cursor=pointer]
+        - menuitem "Help" [ref=e89] [cursor=pointer]
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - toolbar "Search the menus (Alt+/)" [ref=e92]:
+            - combobox "Menus" [ref=e94]
+          - toolbar "Main" [ref=e95]:
+            - button "More" [ref=e96] [cursor=pointer]
+        - toolbar "Mode and view" [ref=e103]:
+          - button "Hide the menus (Ctrl+Shift+F)" [ref=e104] [cursor=pointer]
+    - generic:
+      - generic:
+        - button "Show side panel":
+          - img [ref=e110] [cursor=pointer]
+    - generic [ref=e115]:
+      - generic "Name box (Ctrl + J)" [ref=e116]:
+        - textbox [ref=e117]: A1
+        - button "Name box menu button. Select one of the menu items to navigate to its corresponding named range." [ref=e119] [cursor=pointer]
+      - textbox [ref=e132]
+      - button "Summarize this data" [ref=e133] [cursor=pointer]:
+        - img [ref=e134]
+        - generic [ref=e136]: Summarize this data
+  - navigation "Sheet tab bar" [ref=e172]:
+    - toolbar [ref=e173]:
+      - button "Add Sheet" [ref=e174] [cursor=pointer]
+      - button "All Sheets" [ref=e179] [cursor=pointer]
+    - toolbar [ref=e186]:
+      - button "users" [ref=e187]:
+        - generic [ref=e191]: users
+      - button "premises" [ref=e195] [cursor=pointer]:
+        - generic [ref=e199]: premises
+      - button "visits" [ref=e203] [cursor=pointer]:
+        - generic [ref=e207]: visits
+    - toolbar [ref=e211]
+  - generic [ref=e212]:
+    - textbox [active]
+  - link "Turn on screen reader support" [ref=e213] [cursor=pointer]:
+    - /url: "#"
+  - textbox [ref=e214]
+  - region
+  - region [ref=e215]: To enable screen reader support, press Ctrl+Alt+Z To learn about keyboard shortcuts, press Ctrl+slash
+  - complementary "Gemini" [ref=e216]:
+    - generic [ref=e220]:
+      - generic [ref=e221]:
+        - img [ref=e222]
+        - heading "Gemini" [level=2] [ref=e225]
+        - generic [ref=e226]:
+          - generic [ref=e229]:
+            - button "More options" [ref=e230] [cursor=pointer]:
+              - img [ref=e233]
+            - tooltip [ref=e236]: More options
+          - generic [ref=e237]:
+            - button "Collapse" [ref=e238] [cursor=pointer]:
+              - img [ref=e241]
+            - tooltip [ref=e244]: Collapse
+          - generic [ref=e245]:
+            - button "Close" [ref=e246] [cursor=pointer]:
+              - img [ref=e249]
+            - tooltip [ref=e252]: Close
+      - listbox "See what Gemini can do" [ref=e256]:
+        - generic [ref=e257]:
+          - progressbar "Working on it, this may take a few minutes..." [ref=e258]
+          - progressbar "Working on it, this may take a few minutes..." [ref=e261]
+          - progressbar "Working on it, this may take a few minutes..." [ref=e264]
+      - generic [ref=e267]:
+        - generic [ref=e269]:
+          - combobox "Ask Gemini" [ref=e272]
+          - generic [ref=e273]:
+            - generic [ref=e278]:
+              - button "3 sources" [ref=e279] [cursor=pointer]:
+                - img [ref=e282]
+                - generic [ref=e284]: "3"
+                - img [ref=e286]
+              - tooltip [ref=e289]: 3 sources
+            - generic [ref=e294]:
+              - button "Tools" [ref=e295] [cursor=pointer]:
+                - img [ref=e298]
+              - tooltip [ref=e300]: Tools
+          - generic [ref=e302]:
+            - button "Submit" [disabled] [ref=e303]:
+              - img [ref=e306]
+            - tooltip [ref=e309]: Submit
+        - generic [ref=e310]:
+          - text: Gemini in Workspace can make mistakes.
+          - link "Learn more" [ref=e311] [cursor=pointer]:
+            - /url: https://support.google.com/a/users?p=gw_gemini_responses

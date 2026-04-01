@@ -1,0 +1,21 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - button "Kembali" [ref=e51]:
+            - img [ref=e52]
+            - generic [ref=e54]: Kembali
+          - heading "Rekod Lawatan" [level=2] [ref=e55]
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - button "Patuh" [ref=e58]
+            - button "Kompoun" [ref=e59]
+            - button "Lawat Semula" [ref=e60]
+          - generic [ref=e61]:
+            - generic [ref=e62]: Catatan / No. Notis
+            - 'textbox "Contoh: Kompoun RM500 sebab tiada caruman" [ref=e64]'
+          - button "Hantar Laporan" [ref=e65]
+  - alert [ref=e31]

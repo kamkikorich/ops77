@@ -1,0 +1,68 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e7]:
+        - button "Halaman Utama" [ref=e8]:
+          - img [ref=e9]
+          - generic [ref=e11]: Halaman Utama
+        - generic [ref=e12]:
+          - button "Jana 6 Sticker" [active] [ref=e13]
+          - button "🖨️ Cetak A4" [ref=e14]
+        - generic [ref=e16]:
+          - generic [ref=e18]:
+            - heading "OPS Kesan PERKESO Keningau" [level=2] [ref=e19]
+            - generic [ref=e20]:
+              - img [ref=e21]
+              - img "OPS Kesan PERKESO Keningau" [ref=e25]
+            - generic [ref=e26]:
+              - paragraph [ref=e27]: ID Premis
+              - paragraph [ref=e28]: 4F0981DB
+            - paragraph [ref=e29]: PERTUBUHAN KESELAMATAN SOSIAL
+          - generic [ref=e31]:
+            - heading "OPS Kesan PERKESO Keningau" [level=2] [ref=e32]
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - img "OPS Kesan PERKESO Keningau" [ref=e38]
+            - generic [ref=e39]:
+              - paragraph [ref=e40]: ID Premis
+              - paragraph [ref=e41]: 25D07129
+            - paragraph [ref=e42]: PERTUBUHAN KESELAMATAN SOSIAL
+          - generic [ref=e44]:
+            - heading "OPS Kesan PERKESO Keningau" [level=2] [ref=e45]
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - img "OPS Kesan PERKESO Keningau" [ref=e51]
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: ID Premis
+              - paragraph [ref=e54]: 1AC554E9
+            - paragraph [ref=e55]: PERTUBUHAN KESELAMATAN SOSIAL
+          - generic [ref=e57]:
+            - heading "OPS Kesan PERKESO Keningau" [level=2] [ref=e58]
+            - generic [ref=e59]:
+              - img [ref=e60]
+              - img "OPS Kesan PERKESO Keningau" [ref=e64]
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: ID Premis
+              - paragraph [ref=e67]: "80962639"
+            - paragraph [ref=e68]: PERTUBUHAN KESELAMATAN SOSIAL
+          - generic [ref=e70]:
+            - heading "OPS Kesan PERKESO Keningau" [level=2] [ref=e71]
+            - generic [ref=e72]:
+              - img [ref=e73]
+              - img "OPS Kesan PERKESO Keningau" [ref=e77]
+            - generic [ref=e78]:
+              - paragraph [ref=e79]: ID Premis
+              - paragraph [ref=e80]: E8C911F0
+            - paragraph [ref=e81]: PERTUBUHAN KESELAMATAN SOSIAL
+          - generic [ref=e83]:
+            - heading "OPS Kesan PERKESO Keningau" [level=2] [ref=e84]
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - img "OPS Kesan PERKESO Keningau" [ref=e90]
+            - generic [ref=e91]:
+              - paragraph [ref=e92]: ID Premis
+              - paragraph [ref=e93]: EBBF1D6D
+            - paragraph [ref=e94]: PERTUBUHAN KESELAMATAN SOSIAL
+  - alert [ref=e15]

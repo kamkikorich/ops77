@@ -1,0 +1,380 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Open sidebar" [ref=e9] [cursor=pointer]:
+            - img [ref=e11]
+          - generic [ref=e15]:
+            - link "ops77" [ref=e16] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77
+              - generic [ref=e19]: ops77
+            - button [ref=e20] [cursor=pointer]:
+              - img [ref=e22]
+            - link "Back to team view" [ref=e26] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/~/deployments
+              - img [ref=e28]
+        - generic [ref=e31]: Deployments
+        - button "Open page actions menu" [ref=e33] [cursor=pointer]:
+          - img [ref=e35]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - combobox [ref=e43]:
+            - generic [ref=e44]:
+              - generic:
+                - img
+              - searchbox "All Branches…" [ref=e45]
+              - button "Open menu" [ref=e46] [cursor=pointer]:
+                - img [ref=e47]
+          - combobox [ref=e50]:
+            - generic [ref=e51]:
+              - generic:
+                - img
+              - searchbox "All Authors…" [ref=e52]
+              - button "Open menu" [ref=e53] [cursor=pointer]:
+                - img [ref=e54]
+          - button "Menu" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]:
+              - generic [ref=e61]: All Environments
+              - img [ref=e63]
+          - button "Select Date Range" [ref=e68] [cursor=pointer]:
+            - img [ref=e70]
+            - generic [ref=e72]: Select Date Range
+          - button "Filter by deployment status. 5 of 6 statuses selected" [ref=e75] [cursor=pointer]:
+            - generic [ref=e76]:
+              - generic [ref=e84]: Status
+              - generic "5 of 6 statuses selected" [ref=e85]:
+                - generic [ref=e86]: 5/6
+            - img [ref=e89]
+        - generic [ref=e93]:
+          - generic [ref=e95]:
+            - link [ref=e96] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/9jDDKyV4JXNriWP2urApuCTjBwjB
+            - generic [ref=e98]:
+              - link "9jDDKyV4J" [ref=e101] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/9jDDKyV4JXNriWP2urApuCTjBwjB
+                - paragraph [ref=e102]: 9jDDKyV4J
+              - generic [ref=e104]:
+                - text: Production
+                - generic [ref=e107]:
+                  - img [ref=e109]
+                  - text: Current
+            - generic [ref=e112]:
+              - generic "This deployment is ready." [ref=e114]:
+                - generic [ref=e118]: Ready
+              - generic [ref=e122]: 38s
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - img [ref=e127]
+                - link "main" [ref=e129] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e130]:
+                - img [ref=e131]
+                - 'link "bd03036 fix: sync spreadsheet ID fallback with .env configuration" [ref=e133] [cursor=pointer]':
+                  - /url: https://github.com/kamkikorich/ops77/commit/bd03036c04a39493d3363160df660dc55870a4fb
+                  - generic [ref=e134]: bd03036
+                  - 'generic "fix: sync spreadsheet ID fallback with .env configuration" [ref=e135]'
+            - generic [ref=e136]:
+              - generic [ref=e138]:
+                - generic [ref=e140] [cursor=pointer]: 6m ago by kamkikorich
+                - img "github/kamkikorich" [ref=e144]:
+                  - img "github/kamkikorich" [ref=e145]
+              - button "Deployment Actions" [ref=e147] [cursor=pointer]:
+                - img [ref=e151]
+          - generic [ref=e154]:
+            - link [ref=e155] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/CZGSEawhY56cL9v2y8zxhB1JKFpo
+            - generic [ref=e157]:
+              - link "CZGSEawhY" [ref=e160] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/CZGSEawhY56cL9v2y8zxhB1JKFpo
+                - paragraph [ref=e161]: CZGSEawhY
+              - generic [ref=e163]:
+                - text: Production
+                - img [ref=e165]
+            - generic [ref=e168]:
+              - generic "This deployment is ready." [ref=e170]:
+                - generic [ref=e174]: Ready
+              - generic [ref=e178]: 50s
+            - generic [ref=e182]:
+              - img [ref=e184]
+              - generic [ref=e186]:
+                - text: Redeploy of
+                - link "5gbMxsguw" [ref=e187] [cursor=pointer]:
+                  - /url: /walters-projects-e6cddd66/ops77/5gbMxsguwWrLTHiAthXstsUMpPib
+                  - code [ref=e188]: 5gbMxsguw
+            - generic [ref=e189]:
+              - generic [ref=e191]:
+                - generic [ref=e193] [cursor=pointer]: 15m ago by kamkikorich-2100
+                - img "kamkikorich-2100 Avatar" [ref=e196]:
+                  - img "kamkikorich-2100 Avatar" [ref=e197]
+              - button "Deployment Actions" [ref=e199] [cursor=pointer]:
+                - img [ref=e203]
+          - generic [ref=e206]:
+            - link [ref=e207] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/5gbMxsguwWrLTHiAthXstsUMpPib
+            - generic [ref=e209]:
+              - link "5gbMxsguw" [ref=e212] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/5gbMxsguwWrLTHiAthXstsUMpPib
+                - paragraph [ref=e213]: 5gbMxsguw
+              - generic [ref=e215]:
+                - text: Production
+                - img [ref=e217]
+            - generic [ref=e220]:
+              - generic "This deployment is ready." [ref=e222]:
+                - generic [ref=e226]: Ready
+              - generic [ref=e230]: 48s
+            - generic [ref=e234]:
+              - img [ref=e236]
+              - generic [ref=e238]:
+                - text: Redeploy of
+                - link "63HpdZ5rY" [ref=e239] [cursor=pointer]:
+                  - /url: /walters-projects-e6cddd66/ops77/63HpdZ5rY3NX6bHF4AWoNRPXnyRt
+                  - code [ref=e240]: 63HpdZ5rY
+            - generic [ref=e241]:
+              - generic [ref=e243]:
+                - generic [ref=e245] [cursor=pointer]: 1h ago by kamkikorich-2100
+                - img "kamkikorich-2100 Avatar" [ref=e248]:
+                  - img "kamkikorich-2100 Avatar" [ref=e249]
+              - button "Deployment Actions" [ref=e251] [cursor=pointer]:
+                - img [ref=e255]
+          - generic [ref=e258]:
+            - link [ref=e259] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/63HpdZ5rY3NX6bHF4AWoNRPXnyRt
+            - generic [ref=e261]:
+              - link "63HpdZ5rY" [ref=e264] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/63HpdZ5rY3NX6bHF4AWoNRPXnyRt
+                - paragraph [ref=e265]: 63HpdZ5rY
+              - generic [ref=e267]:
+                - text: Production
+                - img [ref=e269]
+            - generic [ref=e272]:
+              - generic "This deployment is ready." [ref=e274]:
+                - generic [ref=e278]: Ready
+              - generic [ref=e282]: 35s
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - img [ref=e287]
+                - link "main" [ref=e289] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e290]:
+                - img [ref=e291]
+                - 'link "cc959dc fix: update spreadsheet ID to use correct Google Sheet" [ref=e293] [cursor=pointer]':
+                  - /url: https://github.com/kamkikorich/ops77/commit/cc959dc04cb8c1ab498e4489103a15df8608b74e
+                  - generic [ref=e294]: cc959dc
+                  - 'generic "fix: update spreadsheet ID to use correct Google Sheet" [ref=e295]'
+            - generic [ref=e296]:
+              - generic [ref=e298]:
+                - generic [ref=e300] [cursor=pointer]: 2h ago by kamkikorich
+                - img "github/kamkikorich" [ref=e304]:
+                  - img "github/kamkikorich" [ref=e305]
+              - button "Deployment Actions" [ref=e307] [cursor=pointer]:
+                - img [ref=e311]
+          - generic [ref=e314]:
+            - link [ref=e315] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/Aauchw7N419rqqGnepF2xwNokBPc
+            - generic [ref=e317]:
+              - link "Aauchw7N4" [ref=e320] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/Aauchw7N419rqqGnepF2xwNokBPc
+                - paragraph [ref=e321]: Aauchw7N4
+              - generic [ref=e323]:
+                - text: Production
+                - img [ref=e325]
+            - generic [ref=e328]:
+              - generic "This deployment is ready." [ref=e330]:
+                - generic [ref=e334]: Ready
+              - generic [ref=e338]: 48s
+            - generic [ref=e341]:
+              - generic [ref=e342]:
+                - img [ref=e343]
+                - link "main" [ref=e345] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e346]:
+                - img [ref=e347]
+                - 'link "deed42d fix: enable plain password for internal use" [ref=e349] [cursor=pointer]':
+                  - /url: https://github.com/kamkikorich/ops77/commit/deed42d0ea3c5191d074fabd9af1796ef147f4b6
+                  - generic [ref=e350]: deed42d
+                  - 'generic "fix: enable plain password for internal use" [ref=e351]'
+            - generic [ref=e352]:
+              - generic [ref=e354]:
+                - generic [ref=e356] [cursor=pointer]: 2h ago by kamkikorich
+                - img "github/kamkikorich" [ref=e360]:
+                  - img "github/kamkikorich" [ref=e361]
+              - button "Deployment Actions" [ref=e363] [cursor=pointer]:
+                - img [ref=e367]
+          - generic [ref=e370]:
+            - link [ref=e371] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/446SdDmjF2zA1JYQdD3dmfWKUAzB
+            - generic [ref=e373]:
+              - link "446SdDmjF" [ref=e376] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/446SdDmjF2zA1JYQdD3dmfWKUAzB
+                - paragraph [ref=e377]: 446SdDmjF
+              - generic [ref=e379]:
+                - text: Production
+                - img [ref=e381]
+            - generic [ref=e384]:
+              - generic "This deployment is ready." [ref=e386]:
+                - generic [ref=e390]: Ready
+              - generic [ref=e394]: 42s
+            - generic [ref=e397]:
+              - generic [ref=e398]:
+                - img [ref=e399]
+                - link "main" [ref=e401] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e402]:
+                - img [ref=e403]
+                - link "1afdfd5 - Added \"© WajuTech 2026\" copyright notice" [ref=e405] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/commit/1afdfd5b616da5b67508c53fcf5006cdeafdf774
+                  - generic [ref=e406]: 1afdfd5
+                  - generic "- Added \"© WajuTech 2026\" copyright notice" [ref=e407]
+            - generic [ref=e408]:
+              - generic [ref=e410]:
+                - generic [ref=e412] [cursor=pointer]: Feb 10 by kamkikorich
+                - img "github/kamkikorich" [ref=e416]:
+                  - img "github/kamkikorich" [ref=e417]
+              - button "Deployment Actions" [ref=e419] [cursor=pointer]:
+                - img [ref=e423]
+          - generic [ref=e426]:
+            - link [ref=e427] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/JkDFPTeK5rysKxXq4UgyFZx2Tt1L
+            - generic [ref=e429]:
+              - link "JkDFPTeK5" [ref=e432] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/JkDFPTeK5rysKxXq4UgyFZx2Tt1L
+                - paragraph [ref=e433]: JkDFPTeK5
+              - generic [ref=e435]:
+                - text: Production
+                - img [ref=e437]
+            - generic [ref=e440]:
+              - generic "This deployment is ready." [ref=e442]:
+                - generic [ref=e446]: Ready
+              - generic [ref=e450]: 39s
+            - generic [ref=e453]:
+              - generic [ref=e454]:
+                - img [ref=e455]
+                - link "main" [ref=e457] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e458]:
+                - img [ref=e459]
+                - 'link "61af11f - Added `recharts` for data visualization - Created `/admin/analytics` dashboard page - Implemented …" [ref=e461] [cursor=pointer]':
+                  - /url: https://github.com/kamkikorich/ops77/commit/61af11f5a1ac5233e0d643af01f624219e367325
+                  - generic [ref=e462]: 61af11f
+                  - 'generic "- Added `recharts` for data visualization - Created `/admin/analytics` dashboard page - Implemented [StatusChart](cci:1://file:///d:/perkeso_ops/src/components/analytics/StatusChart.tsx:14:0-44:1) for compliance visualization - Developed [StrategyList](cci:1://file:///d:/perkeso_ops/src/components/analytics/StrategyList.tsx:18:0-95:1) to highlight high-priority targets - Added navigation link to Analytics in home page" [ref=e463]': "- Added `recharts` for data visualization - Created `/admin/analytics` dashboard page - Implemented …"
+            - generic [ref=e464]:
+              - generic [ref=e466]:
+                - generic [ref=e468] [cursor=pointer]: Feb 10 by kamkikorich
+                - img "github/kamkikorich" [ref=e472]:
+                  - img "github/kamkikorich" [ref=e473]
+              - button "Deployment Actions" [ref=e475] [cursor=pointer]:
+                - img [ref=e479]
+          - generic [ref=e482]:
+            - link [ref=e483] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/9D7v3g4BLtskGJFiqDrvdpFT7eZA
+            - generic [ref=e485]:
+              - link "9D7v3g4BL" [ref=e488] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/9D7v3g4BLtskGJFiqDrvdpFT7eZA
+                - paragraph [ref=e489]: 9D7v3g4BL
+              - generic [ref=e491]:
+                - text: Production
+                - img [ref=e493]
+            - generic [ref=e496]:
+              - generic "This deployment is ready." [ref=e498]:
+                - generic [ref=e502]: Ready
+              - generic [ref=e506]: 34s
+            - generic [ref=e509]:
+              - generic [ref=e510]:
+                - img [ref=e511]
+                - link "main" [ref=e513] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e514]:
+                - img [ref=e515]
+                - 'link "66bf502 feat: improve navigation with BackButton component" [ref=e517] [cursor=pointer]':
+                  - /url: https://github.com/kamkikorich/ops77/commit/66bf50273a5f71661a2720528e70b01c5a0f39aa
+                  - generic [ref=e518]: 66bf502
+                  - 'generic "feat: improve navigation with BackButton component" [ref=e519]'
+            - generic [ref=e520]:
+              - generic [ref=e522]:
+                - generic [ref=e524] [cursor=pointer]: Feb 10 by kamkikorich
+                - img "github/kamkikorich" [ref=e528]:
+                  - img "github/kamkikorich" [ref=e529]
+              - button "Deployment Actions" [ref=e531] [cursor=pointer]:
+                - img [ref=e535]
+          - generic [ref=e538]:
+            - link [ref=e539] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/GtpnrcQ2xw5AGVPrqnpouSno768S
+            - generic [ref=e541]:
+              - link "GtpnrcQ2x" [ref=e544] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/GtpnrcQ2xw5AGVPrqnpouSno768S
+                - paragraph [ref=e545]: GtpnrcQ2x
+              - generic [ref=e547]:
+                - text: Production
+                - img [ref=e549]
+            - generic [ref=e552]:
+              - generic "This deployment is ready." [ref=e554]:
+                - generic [ref=e558]: Ready
+              - generic [ref=e562]: 36s
+            - generic [ref=e565]:
+              - generic [ref=e566]:
+                - img [ref=e567]
+                - link "main" [ref=e569] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e570]:
+                - img [ref=e571]
+                - link "a3d11f1 Update page.tsx" [ref=e573] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/commit/a3d11f1a5bacf5d5a7bf471dca942da79333573f
+                  - generic [ref=e574]: a3d11f1
+                  - generic "Update page.tsx" [ref=e575]
+            - generic [ref=e576]:
+              - generic [ref=e578]:
+                - generic [ref=e580] [cursor=pointer]: Feb 10 by kamkikorich
+                - img "github/kamkikorich" [ref=e584]:
+                  - img "github/kamkikorich" [ref=e585]
+              - button "Deployment Actions" [ref=e587] [cursor=pointer]:
+                - img [ref=e591]
+          - generic [ref=e594]:
+            - link [ref=e595] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/HQzJ5Y1qjKKAhFb1UxZrCPuDfSvT
+            - generic [ref=e597]:
+              - link "HQzJ5Y1qj" [ref=e600] [cursor=pointer]:
+                - /url: /walters-projects-e6cddd66/ops77/HQzJ5Y1qjKKAhFb1UxZrCPuDfSvT
+                - paragraph [ref=e601]: HQzJ5Y1qj
+              - generic [ref=e603]:
+                - text: Production
+                - img [ref=e605]
+            - generic [ref=e608]:
+              - generic "This deployment is ready." [ref=e610]:
+                - generic [ref=e614]: Ready
+              - generic [ref=e618]: 45s
+            - generic [ref=e621]:
+              - generic [ref=e622]:
+                - img [ref=e623]
+                - link "main" [ref=e625] [cursor=pointer]:
+                  - /url: https://github.com/kamkikorich/ops77/tree/main
+              - generic [ref=e626]:
+                - img [ref=e627]
+                - 'link "3441574 chore: secure project and update configuration for google sheets" [ref=e629] [cursor=pointer]':
+                  - /url: https://github.com/kamkikorich/ops77/commit/34415741373ad47aa10892587598d227f9bc9cf2
+                  - generic [ref=e630]: "3441574"
+                  - 'generic "chore: secure project and update configuration for google sheets" [ref=e631]'
+            - generic [ref=e632]:
+              - generic [ref=e634]:
+                - generic [ref=e636] [cursor=pointer]: Feb 10 by kamkikorich
+                - img "github/kamkikorich" [ref=e640]:
+                  - img "github/kamkikorich" [ref=e641]
+              - button "Deployment Actions" [ref=e643] [cursor=pointer]:
+                - img [ref=e647]
+        - generic [ref=e649]:
+          - paragraph [ref=e650]:
+            - text: Deployment Retention is enabled for this project — some deployments will be deleted after a set time period.
+            - link "Learn more" [ref=e651] [cursor=pointer]:
+              - /url: /docs/security/deployment-retention
+              - text: Learn more
+              - img [ref=e652]
+          - button "View Recently Deleted" [ref=e654] [cursor=pointer]:
+            - generic [ref=e655]: View Recently Deleted
+  - alert [ref=e657]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img

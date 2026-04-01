@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e6]:
+        - button "Kembali" [ref=e7]:
+          - img [ref=e8]
+          - generic [ref=e10]: Kembali
+        - generic [ref=e11]:
+          - heading "Kedai Runcit ABC" [level=2] [ref=e12]
+          - paragraph [ref=e13]: A-1-5
+          - generic [ref=e14]:
+            - generic [ref=e15]: Belum Daftar
+            - button "Ubah Status" [ref=e16]
+        - generic [ref=e17]:
+          - button "📝 Rekod Lawatan" [ref=e18]
+          - button "🖨️ Sticker" [ref=e19]
+        - generic [ref=e20]:
+          - heading "Sejarah Lawatan" [level=3] [ref=e21]
+          - generic [ref=e22]:
+            - generic [ref=e23]:
+              - generic [ref=e24]: Patuh
+              - generic [ref=e25]: Premis patuh sepenuhnya
+            - generic [ref=e26]: 1/4/2026
+  - alert [ref=e27]

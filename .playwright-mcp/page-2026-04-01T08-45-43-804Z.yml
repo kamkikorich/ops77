@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Open sidebar" [ref=e9] [cursor=pointer]:
+          - img [ref=e11]
+        - generic [ref=e19]: Logs
+        - button "Open page actions menu" [ref=e21] [cursor=pointer]:
+          - img [ref=e23]
+      - generic [ref=e45]:
+        - generic [ref=e46]: Time
+        - generic [ref=e47]: Status
+        - generic [ref=e48]: Host
+        - generic [ref=e49]: Request
+        - generic [ref=e50]: Messages
+  - alert [ref=e127]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img

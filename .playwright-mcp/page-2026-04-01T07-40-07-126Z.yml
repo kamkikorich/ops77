@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e7]:
+        - button "Halaman Utama" [ref=e8]:
+          - img [ref=e9]
+          - generic [ref=e11]: Halaman Utama
+        - generic [ref=e12]:
+          - button "Jana 6 Sticker" [ref=e13]
+          - button "🖨️ Cetak A4" [ref=e14]
+  - alert [ref=e15]

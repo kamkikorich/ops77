@@ -1,0 +1,7 @@
+[     642ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    1742ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ https://docs.google.com/spreadsheets/d/1jZYDzVQ-_RLga9mexOM3NSsJ1OGLLMu4PlGZzZ8kI9A/edit?gid=461173501#gid=461173501:0
+[    2085ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://docs.google.com/drivesharing/clientmodel?id=1jZYDzVQ-_RLga9mexOM3NSsJ1OGLLMu4PlGZzZ8kI9A&foreignService=ritz&authuser=0&origin=https%3A%2F%2Fdocs.google.com:0
+[    2333ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    2359ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    2418ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    2420ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0

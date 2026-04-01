@@ -1,5 +1,6 @@
 import { getAllPremises } from '@/app/actions';
-import { StatusChart, processStatusData } from '@/components/analytics/StatusChart';
+import { processStatusData } from '@/lib/analytics';
+import { StatusChart } from '@/components/analytics/StatusChart';
 import { StrategyList } from '@/components/analytics/StrategyList';
 import { BackButton } from '@/components/ui/BackButton';
 

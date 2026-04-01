@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - heading "Log Masuk" [level=1] [ref=e9]
+          - paragraph [ref=e10]: Akses sistem untuk pemeriksa PERKESO
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - text: Emel
+            - textbox "Emel" [ref=e14]:
+              - /placeholder: pemeriksa@perkeso.gov.my
+          - generic [ref=e15]:
+            - text: Kata Laluan
+            - textbox "Kata Laluan" [ref=e17]
+          - generic [ref=e18]:
+            - checkbox "Ingat saya (kekal log masuk)" [checked] [ref=e19]
+            - generic [ref=e20]: Ingat saya (kekal log masuk)
+          - button "Masuk" [ref=e21]
+          - paragraph [ref=e22]:
+            - text: Belum ada akaun?
+            - link "Daftar Akaun" [ref=e23] [cursor=pointer]:
+              - /url: /signup
+  - alert [ref=e24]

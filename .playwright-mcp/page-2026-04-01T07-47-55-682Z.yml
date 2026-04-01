@@ -1,0 +1,30 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e6]:
+        - button "Kembali" [ref=e7]:
+          - img [ref=e8]
+          - generic [ref=e10]: Kembali
+        - generic [ref=e11]:
+          - heading "Pendaftaran Premis Baru" [level=2] [ref=e12]
+          - generic [ref=e13]: "UUID: 4f0981db-0000-4000-8000-000000000000"
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - generic [ref=e16]: Nama Kedai / Syarikat
+            - 'textbox "Contoh: Restoran Maju" [ref=e18]'
+          - generic [ref=e19]:
+            - generic [ref=e20]: No. Lot / Unit
+            - 'textbox "Contoh: A-1-2" [ref=e22]'
+          - generic [ref=e23]:
+            - generic [ref=e24]: Status PERKESO
+            - combobox [ref=e25]:
+              - option "Belum Daftar" [selected]
+              - option "Sudah Daftar"
+              - option "Ragu-ragu (Siasatan Lanjut)"
+          - generic [ref=e26]:
+            - generic [ref=e27]: Koordinat GPS
+            - textbox [ref=e29]
+          - button "Simpan & Daftar" [ref=e30]
+  - alert [ref=e31]

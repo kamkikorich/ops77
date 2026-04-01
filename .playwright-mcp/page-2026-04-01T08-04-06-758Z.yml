@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Utama" [ref=e8]:
+            - img [ref=e9]
+            - generic [ref=e11]: Utama
+          - heading "Laporan Lawatan" [level=1] [ref=e12]
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - button "Julat Tarikh" [ref=e15]
+            - button "Tahun" [ref=e16]
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - generic [ref=e19]: Dari
+              - textbox [ref=e21]
+            - generic [ref=e22]:
+              - generic [ref=e23]: Hingga
+              - textbox [ref=e25]
+            - button "Jana Laporan" [disabled]
+        - generic [ref=e26]:
+          - paragraph [ref=e27]: Tiada data lawatan untuk dipaparkan.
+          - paragraph [ref=e28]: Sila pilih tarikh dan klik "Jana Laporan".
+  - alert [ref=e29]

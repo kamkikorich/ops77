@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - heading "Sistem QR Ops" [level=1] [ref=e4]
+    - main [ref=e5]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - img "PERKESO Logo" [ref=e29]
+            - generic [ref=e30]: ✨ Sistem Operasi Digital v2.0
+            - heading "Ops Kesan Digital" [level=1] [ref=e31]
+            - paragraph [ref=e32]: Imbas kod QR pada pelekat premis untuk merekod lawatan atau mendaftar premis baru.
+          - generic [ref=e33]:
+            - button "📷 Imbas QR" [ref=e34]
+            - generic [ref=e39]: Atau
+            - generic [ref=e40]:
+              - textbox "Masukkan ID Premis (UUID)" [ref=e42]
+              - button "Cari Premis" [disabled]
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: Akses Petugas
+              - generic [ref=e45]:
+                - button "🔐 Log Masuk" [ref=e46]
+                - button "🖨️ Cetak Sticker" [ref=e47]
+                - button "📊 Analisis" [ref=e48]
+        - generic [ref=e49]:
+          - paragraph [ref=e50]: Pejabat PERKESO Keningau
+          - paragraph [ref=e51]: © WajuTech 2026. Hak Cipta Terpelihara.
+  - alert [ref=e24]

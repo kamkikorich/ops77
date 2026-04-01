@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Open sidebar" [ref=e9] [cursor=pointer]:
+            - img [ref=e11]
+          - generic [ref=e15]:
+            - link "Other ops77" [ref=e230] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77
+              - img "Other" [ref=e231]:
+                - img "Other" [ref=e232]
+              - generic [ref=e19]: ops77
+            - button [ref=e20] [cursor=pointer]:
+              - img [ref=e22]
+            - link "Back to team view" [ref=e26] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/~/settings/environment-variables
+              - img [ref=e28]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - link "Project Settings" [ref=e32] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/settings
+            - img [ref=e33]
+          - generic [ref=e35]: Environment Variables
+        - button "Open page actions menu" [ref=e37] [cursor=pointer]:
+          - img [ref=e39]
+      - generic [ref=e48]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - heading "Environment Variables" [level=2] [ref=e52]
+            - paragraph [ref=e53]:
+              - text: Store API keys, tokens, and config securely.
+              - link "Learn more" [ref=e54] [cursor=pointer]:
+                - /url: /docs/environment-variables
+                - text: Learn more
+                - img [ref=e55]
+          - generic [ref=e57]:
+            - button "Link Shared Variable" [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Link Shared Variable
+            - button "Add Environment Variable" [ref=e60] [cursor=pointer]:
+              - generic [ref=e61]: Add Environment Variable
+        - tablist [ref=e62]:
+          - tab "Project" [selected] [ref=e63] [cursor=pointer]
+          - tab "Shared" [ref=e64] [cursor=pointer]
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - searchbox "Search" [ref=e68]
+            - img [ref=e70]
+          - combobox [ref=e73]:
+            - generic [ref=e75]:
+              - searchbox [ref=e76]: All Environments
+              - button "Open menu" [ref=e77] [cursor=pointer]:
+                - img [ref=e78]
+          - generic [ref=e82]:
+            - generic:
+              - img
+            - combobox [ref=e83] [cursor=pointer]:
+              - option "Sort by…" [disabled]
+              - option "Last Updated" [selected]
+              - option "Name"
+              - option "Type"
+            - generic:
+              - img
+        - generic [ref=e85]:
+          - generic [ref=e89]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - img [ref=e95]
+                - generic [ref=e97]:
+                  - button "GOOGLE_SHEETS_ID" [ref=e101] [cursor=pointer]:
+                    - generic "GOOGLE_SHEETS_ID" [ref=e102]
+                  - generic [ref=e106]: All Environments
+              - generic [ref=e109]:
+                - button "Click to reveal" [ref=e303] [cursor=pointer]:
+                  - img [ref=e304]
+                - paragraph [ref=e306]: •••••••••••••••
+              - generic [ref=e115]:
+                - generic [ref=e117]:
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120]: Updated
+                    - text: just now
+                  - img [ref=e239]
+                - button "Menu" [ref=e126] [cursor=pointer]:
+                  - img [ref=e130]
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - img [ref=e137]
+                - generic [ref=e139]:
+                  - button "GOOGLE_SERVICE_ACCOUNT_EMAIL" [ref=e143] [cursor=pointer]:
+                    - generic "GOOGLE_SERVICE_ACCOUNT_EMAIL" [ref=e144]
+                  - generic [ref=e148]: All Environments
+              - generic [ref=e151]:
+                - button "Click to reveal" [ref=e152] [cursor=pointer]:
+                  - img [ref=e154]
+                - paragraph [ref=e156]: •••••••••••••••
+              - generic [ref=e157]:
+                - generic [ref=e159]:
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162]: Added
+                    - text: Feb 10
+                  - img [ref=e165]
+                - button "Menu" [ref=e168] [cursor=pointer]:
+                  - img [ref=e172]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - img [ref=e179]
+                - generic [ref=e181]:
+                  - button "GOOGLE_PRIVATE_KEY" [ref=e185] [cursor=pointer]:
+                    - generic "GOOGLE_PRIVATE_KEY" [ref=e186]
+                  - generic [ref=e190]: All Environments
+              - generic [ref=e193]:
+                - button "Click to reveal" [ref=e194] [cursor=pointer]:
+                  - img [ref=e196]
+                - paragraph [ref=e198]: •••••••••••••••
+              - generic [ref=e199]:
+                - generic [ref=e201]:
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204]: Added
+                    - text: Feb 10
+                  - img [ref=e207]
+                - button "Menu" [ref=e210] [cursor=pointer]:
+                  - img [ref=e214]
+          - generic [ref=e218]:
+            - generic [ref=e220] [cursor=pointer]:
+              - checkbox [checked] [ref=e221]
+              - img [ref=e223]
+            - generic [ref=e225]:
+              - text: Automatically expose
+              - link "System Environment Variables" [ref=e226] [cursor=pointer]:
+                - /url: /docs/environment-variables/system-environment-variables
+                - text: System Environment Variables
+                - img [ref=e227]
+  - alert [ref=e229]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+  - dialog [ref=e319]:
+    - generic [ref=e321]:
+      - banner [ref=e322]:
+        - heading "Redeploy" [level=3] [ref=e323]
+      - generic [ref=e324]:
+        - paragraph [ref=e325]: You are about to create a new Deployment with the latest configuration from your Project Settings.
+        - generic [ref=e327]:
+          - generic [ref=e328]: Choose Environment
+          - generic [ref=e330]:
+            - generic:
+              - img
+            - combobox "Environments" [ref=e331] [cursor=pointer]:
+              - option "Production" [selected]
+              - option "Preview"
+              - option "Your project has no custom environments" [disabled]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Production
+                - img
+        - radiogroup [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334] [cursor=pointer]:
+              - 'radio "ops77-9gy824qex-walters-projects-e6cddd66.vercel.app Current main fix: update spreadsheet ID to use correct Google Sheet Changed spreadsheet ID from old project to user''s spreadsheet: 1KOO0gU9en6SOWLykOQHwGX10dwFs0q67Z4GxF1K4gdo Users added with plain passwords for internal use. 1 hour ago" [checked] [ref=e336]'
+              - generic [ref=e339]:
+                - generic [ref=e340]: ops77-9gy824qex-walters-projects-e6cddd66.vercel.app
+                - generic [ref=e342]: Current
+                - generic [ref=e343]:
+                  - img [ref=e344]
+                  - text: main
+                - generic [ref=e346]:
+                  - img [ref=e347]
+                  - generic [ref=e349]: "fix: update spreadsheet ID to use correct Google Sheet Changed spreadsheet ID from old project to user's spreadsheet: 1KOO0gU9en6SOWLykOQHwGX10dwFs0q67Z4GxF1K4gdo Users added with plain passwords for internal use."
+                - generic [ref=e350]:
+                  - img [ref=e351]
+                  - text: 1 hour ago
+            - button "Choose a Deployment" [ref=e353] [cursor=pointer]:
+              - generic [ref=e354]: Choose a Deployment
+        - generic [ref=e355]:
+          - paragraph [ref=e356]: "Assigned domains:"
+          - generic [ref=e358]:
+            - img [ref=e360]
+            - link "ops77.vercel.app" [ref=e362] [cursor=pointer]:
+              - /url: https://ops77.vercel.app
+        - generic [ref=e363]:
+          - generic [ref=e364] [cursor=pointer]:
+            - generic [ref=e365]:
+              - checkbox "Use existing Build Cache." [ref=e366]
+              - img [ref=e368]
+            - generic [ref=e369]: Use existing Build Cache.
+          - link "Learn about Build Cache" [ref=e370] [cursor=pointer]:
+            - /url: /docs/deployments/troubleshoot-a-build#understanding-build-cache
+            - text: Learn about Build Cache
+            - img [ref=e371]
+    - contentinfo [ref=e373]:
+      - button "Cancel" [ref=e374] [cursor=pointer]:
+        - generic [ref=e375]: Cancel
+      - button "Redeploy" [ref=e376] [cursor=pointer]:
+        - generic [ref=e377]: Redeploy

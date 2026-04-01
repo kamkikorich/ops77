@@ -93,10 +93,23 @@ src/
 - ✅ GPS auto-capture on registration
 - ✅ Zod validation on all forms
 
+## User Credentials (Internal)
+
+| Email | Password | Role |
+|-------|----------|------|
+| admin@perkeso.gov.my | admin123 | admin |
+| kup@perkeso.gov.my | perkeso123 | user |
+| ahmad@perkeso.gov.my | perkeso123 | user |
+| kasman@perkeso.gov.my | perkeso123 | user |
+| kerani@perkeso.gov.my | perkeso123 | user |
+
 ## Environment Variables
 
 ```
 CONTEXT7_API_KEY=ctx7sk_... (optional, untuk MCP Context7)
+GOOGLE_SERVICE_ACCOUNT_EMAIL=...
+GOOGLE_PRIVATE_KEY=...
+GOOGLE_SHEETS_ID=1jZYDzVQ-_RLga9mexOM3NSsJ1OGLLMu4PlGZzZ8kI9A
 ```
 
 ## Commands
@@ -106,10 +119,11 @@ npm run dev      # Start development server
 npm run build    # Production build
 npm run test     # Run Vitest tests
 npm run lint     # Run ESLint
+npx tsx scripts/add-users.ts  # Add users to Google Sheets
 ```
 
 ## Deployment
 
 - **Platform**: Vercel
-- **Repository**: github.com/kamkikorich/qr_ops
+- **Repository**: github.com/kamkikorich/ops77
 - **Auto-deploy**: On push to main branch

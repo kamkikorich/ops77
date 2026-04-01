@@ -2,6 +2,9 @@
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 
+// Re-export for backwards compatibility
+export { processStatusData } from '@/lib/analytics';
+
 type DataItem = {
     name: string;
     value: number;
@@ -42,27 +45,4 @@ export function StatusChart({ data }: StatusChartProps) {
             </ResponsiveContainer>
         </div>
     );
-}
-
-// Helper to process raw data into chart format
-export function processStatusData(premises: { status_perkeso: string }[]) {
-    const counts: Record<string, number> = {};
-
-    premises.forEach(p => {
-        const status = p.status_perkeso || 'Unknown';
-        counts[status] = (counts[status] || 0) + 1;
-    });
-
-    const COLORS: Record<string, string> = {
-        'Sudah Daftar': '#22c55e', // Green
-        'Belum Daftar': '#ef4444', // Red
-        'Ragu-ragu': '#eab308',   // Yellow
-        'Unknown': '#9ca3af'      // Gray
-    };
-
-    return Object.entries(counts).map(([name, value]) => ({
-        name,
-        value,
-        color: COLORS[name] || '#6b7280'
-    }));
 }

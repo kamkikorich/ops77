@@ -1,0 +1,141 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Open sidebar" [ref=e9] [cursor=pointer]:
+            - img [ref=e11]
+          - generic [ref=e15]:
+            - link "Other ops77" [ref=e230] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77
+              - img "Other" [ref=e231]:
+                - img "Other" [ref=e232]
+              - generic [ref=e19]: ops77
+            - button [ref=e20] [cursor=pointer]:
+              - img [ref=e22]
+            - link "Back to team view" [ref=e26] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/~/settings/environment-variables
+              - img [ref=e28]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - link "Project Settings" [ref=e32] [cursor=pointer]:
+              - /url: /walters-projects-e6cddd66/ops77/settings
+            - img [ref=e33]
+          - generic [ref=e35]: Environment Variables
+        - button "Open page actions menu" [ref=e37] [cursor=pointer]:
+          - img [ref=e39]
+      - generic [ref=e48]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - heading "Environment Variables" [level=2] [ref=e52]
+            - paragraph [ref=e53]:
+              - text: Store API keys, tokens, and config securely.
+              - link "Learn more" [ref=e54] [cursor=pointer]:
+                - /url: /docs/environment-variables
+                - text: Learn more
+                - img [ref=e55]
+          - generic [ref=e57]:
+            - button "Link Shared Variable" [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Link Shared Variable
+            - button "Add Environment Variable" [ref=e60] [cursor=pointer]:
+              - generic [ref=e61]: Add Environment Variable
+        - tablist [ref=e62]:
+          - tab "Project" [selected] [ref=e63] [cursor=pointer]
+          - tab "Shared" [ref=e64] [cursor=pointer]
+        - generic [ref=e65]:
+          - generic [ref=e67]:
+            - searchbox "Search" [ref=e68]
+            - img [ref=e70]
+          - combobox [ref=e73]:
+            - generic [ref=e75]:
+              - searchbox [ref=e76]: All Environments
+              - button "Open menu" [ref=e77] [cursor=pointer]:
+                - img [ref=e78]
+          - generic [ref=e82]:
+            - generic:
+              - img
+            - combobox [ref=e83] [cursor=pointer]:
+              - option "Sort by…" [disabled]
+              - option "Last Updated" [selected]
+              - option "Name"
+              - option "Type"
+            - generic:
+              - img
+        - generic [ref=e85]:
+          - generic [ref=e89]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - img [ref=e95]
+                - generic [ref=e97]:
+                  - button "GOOGLE_SHEETS_ID" [ref=e101] [cursor=pointer]:
+                    - generic "GOOGLE_SHEETS_ID" [ref=e102]
+                  - generic [ref=e106]: All Environments
+              - generic [ref=e109]:
+                - button "Click to hide" [ref=e233] [cursor=pointer]:
+                  - img [ref=e234]
+                - button "1KOO0gU9en6SOWLykOQHwGX10dwFs0q67Z4GxF1K4gdo" [ref=e237] [cursor=pointer]:
+                  - code [ref=e238]: 1KOO0gU9en6SOWLykOQHwGX10dwFs0q67Z4GxF1K4gdo
+              - generic [ref=e115]:
+                - generic [ref=e117]:
+                  - generic [ref=e119] [cursor=pointer]:
+                    - generic [ref=e120]: Added
+                    - text: 1h ago
+                  - img [ref=e239]
+                - button "Menu" [ref=e126] [cursor=pointer]:
+                  - img [ref=e130]
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - img [ref=e137]
+                - generic [ref=e139]:
+                  - button "GOOGLE_SERVICE_ACCOUNT_EMAIL" [ref=e143] [cursor=pointer]:
+                    - generic "GOOGLE_SERVICE_ACCOUNT_EMAIL" [ref=e144]
+                  - generic [ref=e148]: All Environments
+              - generic [ref=e151]:
+                - button "Click to reveal" [ref=e152] [cursor=pointer]:
+                  - img [ref=e154]
+                - paragraph [ref=e156]: •••••••••••••••
+              - generic [ref=e157]:
+                - generic [ref=e159]:
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e162]: Added
+                    - text: Feb 10
+                  - img [ref=e165]
+                - button "Menu" [ref=e168] [cursor=pointer]:
+                  - img [ref=e172]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - img [ref=e179]
+                - generic [ref=e181]:
+                  - button "GOOGLE_PRIVATE_KEY" [ref=e185] [cursor=pointer]:
+                    - generic "GOOGLE_PRIVATE_KEY" [ref=e186]
+                  - generic [ref=e190]: All Environments
+              - generic [ref=e193]:
+                - button "Click to reveal" [ref=e194] [cursor=pointer]:
+                  - img [ref=e196]
+                - paragraph [ref=e198]: •••••••••••••••
+              - generic [ref=e199]:
+                - generic [ref=e201]:
+                  - generic [ref=e203] [cursor=pointer]:
+                    - generic [ref=e204]: Added
+                    - text: Feb 10
+                  - img [ref=e207]
+                - button "Menu" [ref=e210] [cursor=pointer]:
+                  - img [ref=e214]
+          - generic [ref=e218]:
+            - generic [ref=e220] [cursor=pointer]:
+              - checkbox [checked] [ref=e221]
+              - img [ref=e223]
+            - generic [ref=e225]:
+              - text: Automatically expose
+              - link "System Environment Variables" [ref=e226] [cursor=pointer]:
+                - /url: /docs/environment-variables/system-environment-variables
+                - text: System Environment Variables
+                - img [ref=e227]
+  - alert [ref=e229]
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
