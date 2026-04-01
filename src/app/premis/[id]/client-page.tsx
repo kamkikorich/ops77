@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/Button";
 import { BackButton } from "@/components/ui/BackButton";
 import { Input } from "@/components/ui/Input";
+import { LocationViewButton } from "@/components/LocationInput";
 import { useRouter } from "next/navigation";
 import { Premis } from "@/lib/types";
 import { useState } from "react";
@@ -52,6 +53,16 @@ export default function PremisDashboardClient({ premis }: { premis: Premis }) {
                         Ubah Status
                     </button>
                 </div>
+
+                {/* Location display */}
+                {premis.gps && (
+                    <div className="mt-3 pt-3 border-t border-slate-700/50">
+                        <div className="flex items-center justify-between">
+                            <span className="text-xs text-slate-400">Lokasi:</span>
+                            <LocationViewButton gps={premis.gps} />
+                        </div>
+                    </div>
+                )}
             </div>
 
             <div className="flex gap-2">

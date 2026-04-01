@@ -3,16 +3,15 @@
 import { Button } from "@/components/ui/Button";
 import { BackButton } from "@/components/ui/BackButton";
 import { Input } from "@/components/ui/Input";
-import { useState, useEffect, Suspense } from "react";
+import { LocationInput } from "@/components/LocationInput";
+import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-// import { createClient } from "@/utils/supabase/client";
 import { PremiseSchema } from "@/lib/schemas";
 
 function RegisterContent() {
     const searchParams = useSearchParams();
     const uuid = searchParams.get("uuid") || "";
     const router = useRouter();
-    // const supabase = createClient();
 
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
@@ -22,20 +21,6 @@ function RegisterContent() {
         kod_majikan: "",
         gps: "",
     });
-
-    useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    setFormData((prev) => ({
-                        ...prev,
-                        gps: `${position.coords.latitude},${position.coords.longitude}`,
-                    }));
-                },
-                (error) => console.error("Error getting GPS:", error)
-            );
-        }
-    }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -132,14 +117,12 @@ function RegisterContent() {
                     </div>
                 )}
 
-                <div>
-                    <label className="mb-2 block text-sm font-medium">Koordinat GPS</label>
-                    <Input
-                        readOnly
-                        value={formData.gps}
-                        className="bg-slate-50 text-slate-500"
-                    />
-                </div>
+                <LocationInput
+                    value={formData.gps}
+                    onChange={(coords) => setFormData({ ...formData, gps: coords })}
+                    label="Koordinat Lokasi Premis"
+                    placeholder="Paste URL Google Maps atau masukkan koordinat"
+                />
 
                 <Button size="xl" type="submit" disabled={isLoading} className="mt-4">
                     {isLoading ? "Menyimpan..." : "Simpan & Daftar"}

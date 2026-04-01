@@ -93,8 +93,16 @@ export default function Home() {
               <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/login')}>
                 🔐 Log Masuk
               </Button>
+              <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/premis')}>
+                📍 Senarai Premis
+              </Button>
               <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/admin/print-batch')}>
                 🖨️ Cetak Sticker
+              </Button>
+            </div>
+            <div className="flex w-full gap-3">
+              <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/admin/report')}>
+                📋 Laporan
               </Button>
               <Button variant="ghost" className="flex-1 text-xs" onClick={() => router.push('/admin/analytics')}>
                 📊 Analisis

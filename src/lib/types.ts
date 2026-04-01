@@ -15,5 +15,6 @@ export interface Premis {
     no_lot: string;
     status_perkeso: string;
     kod_majikan?: string;
+    gps?: string;
     visits: Visit[];
 }
