@@ -326,12 +326,10 @@ export async function registerUser(prevState: ActionState, formData: FormData): 
             return { error: 'Emel sudah didaftarkan.' };
         }
 
-        const { createHash } = await import('crypto');
-        const hashedPassword = createHash('sha256').update(password).digest('hex');
-
+        // Store plain password for internal use (easier management)
         await sheet.addRow({
             email,
-            password: hashedPassword,
+            password: password, // Plain password for internal use
             name: email.split('@')[0], // Default name from email for now
             role: 'user',
             status: 'pending', // Default status
@@ -361,10 +359,15 @@ export async function loginUser(prevState: ActionState, formData: FormData): Pro
             return { error: 'Emel atau kata laluan salah.' };
         }
 
+        // Plain password comparison for internal use
+        // Password can be stored as plain text or SHA256 hash
         const { createHash } = await import('crypto');
         const hashedPassword = createHash('sha256').update(password).digest('hex');
 
-        if (user.password !== hashedPassword) {
+        // Check both plain password and hashed password for compatibility
+        const passwordMatch = user.password === password || user.password === hashedPassword;
+
+        if (!passwordMatch) {
             return { error: 'Emel atau kata laluan salah.' };
         }
 

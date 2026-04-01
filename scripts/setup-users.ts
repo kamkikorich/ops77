@@ -1,6 +1,5 @@
 
 import { doc } from '../src/lib/googleSheets';
-import { createHash } from 'crypto';
 
 async function main() {
     console.log('Initializing Google Sheets connection...');
@@ -25,14 +24,12 @@ async function main() {
 
     if (!existingAdmin) {
         console.log('Creating default admin user...');
-        // Simple hash for demo purposes - in production use bcrypt/argon2
-        // But since user wanted "fast script", we use node crypto
-        const password = 'password123';
-        const hashedPassword = createHash('sha256').update(password).digest('hex');
+        // Plain password for internal use - easier to manage
+        const password = 'admin123';
 
         await usersSheet.addRow({
             email: adminEmail,
-            password: hashedPassword,
+            password: password, // Plain password
             name: 'Admin PERKESO',
             role: 'admin',
             status: 'active',
