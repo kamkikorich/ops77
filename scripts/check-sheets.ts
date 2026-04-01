@@ -1,7 +1,7 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 
-const SPREADSHEET_ID = '1KOO0gU9en6SOWLykOQHwGX10dwFs0q67Z4GxF1K4gdo';
+const SPREADSHEET_ID = '1jZYDzVQ-_RLga9mexOM3NSsJ1OGLLMu4PlGZzZ8kI9A';
 const SERVICE_ACCOUNT_EMAIL = 'kehadiran-qr-bot@perkeso-keningau-qr.iam.gserviceaccount.com';
 const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDadZJRjxfl8I/b
@@ -58,7 +58,7 @@ async function main() {
         const rows = await sheet.getRows();
         console.log(`Data rows: ${rows.length}`);
         if (rows.length > 0) {
-            console.log('First row:', rows[0]._rawData);
+            console.log('First row data available');
         }
     }
 }
