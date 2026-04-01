@@ -1,8 +1,8 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 
-// Config variables
-const SPREADSHEET_ID = process.env.GOOGLE_SHEETS_ID || '1jZYDzVQ-_RLga9mexOM3NSsJ1OGLLMu4PlGZzZ8kI9A';
+// Config variables - Updated to use user's spreadsheet
+const SPREADSHEET_ID = process.env.GOOGLE_SHEETS_ID || '1KOO0gU9en6SOWLykOQHwGX10dwFs0q67Z4GxF1K4gdo';
 
 // Initialize auth - see https://theoephraim.github.io/node-google-spreadsheet/#/guides/authentication
 const serviceAccountAuth = new JWT({
